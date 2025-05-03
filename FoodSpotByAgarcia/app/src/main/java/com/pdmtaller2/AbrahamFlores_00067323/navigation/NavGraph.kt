@@ -30,7 +30,6 @@ fun NavGraph(startDestination: String = Routes.HOME) {
 
     Scaffold(
         bottomBar = {
-            // Mostrar la barra inferior solo si esta en pantallas principales
             val currentRoute = navController.currentBackStackEntryAsState().value?.destination?.route
             if (currentRoute == Routes.HOME || currentRoute == Routes.ORDER || currentRoute == Routes.SEARCH) {
                 BottomNavigationBar(navController = navController)
@@ -57,7 +56,7 @@ fun NavGraph(startDestination: String = Routes.HOME) {
             OrderScreen()
         }
         composable(Routes.SEARCH) {
-            SearchScreen()
+            SearchScreen(navController = navController)
         }
         }
     }

@@ -53,10 +53,10 @@ fun HomeScreen(navController: NavController) {
         LazyColumn(modifier = Modifier
             .fillMaxSize()
             .padding(innerPadding)
-            .padding(16.dp)) {
+            .padding(14.dp)) {
             grouped.forEach { (category, restaurants) ->
                 item {
-                    Spacer(modifier = Modifier.height(25.dp))
+                    Spacer(modifier = Modifier.height(24.dp))
                     Divider(thickness = 1.dp, color = Color.LightGray)
 
                     Text(category,

@@ -62,9 +62,36 @@ val sampleRestaurants = listOf(
 
     )
     ),
-    //COMIDA ITALIANA
     Restaurant(
         id = "5",
+        name = "Mings",
+        description = "Auténtica comida japonesa al instante",
+        imageUrl = "https://i.pinimg.com/736x/3b/04/e4/3b04e4e018b1956f83042d33681534bb.jpg",
+        category = "Comida Asiática",
+        menu = listOf(
+            Dish("Ramen Clásico", "Fideos en caldo con cerdo y huevo", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa4C1ogg8B3lfXGU0VVHJ4zq5Q3gyZTi_HGg&s"),
+            Dish("Gyozas", "Empanadillas japonesas doradas", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloX2RKENj22J7P8jfZLk5EUgOt16mSkm3kQ&s"),
+            Dish("Katsu Curry", "Pollo empanizado con curry japonés", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUoq_eiRxf_rygmdPtid378Wwpy1ADnaUmAg&s")
+        )
+    ),
+
+    Restaurant(
+        id = "6",
+        name = "Sakura House",
+        description = "Sabores tradicionales del Japón",
+        imageUrl = "https://static.vecteezy.com/system/resources/previews/010/399/752/non_2x/simpe-and-modern-asian-restaurant-logo-template-vector.jpg",
+        category = "Comida Asiática",
+        menu = listOf(
+            Dish("Udon", "Fideos gruesos en sopa caliente", "https://www.chopstickchronicles.com/wp-content/uploads/2020/06/Tempura-Udon-update-18-e1738984922859.jpg"),
+            Dish("Takoyaki", "Bolitas de pulpo con salsa y mayonesa", "https://www.cocinista.es/download/bancorecursos/recetas/receta-takoyaki-japones-pulpo.jpg"),
+            Dish("Onigiri", "Bola de arroz rellena y envuelta en alga", "https://www.cocinista.es/download/bancorecursos/recetas/receta-onigiri-japones.jpg")
+        )
+    ),
+
+
+            //COMIDA ITALIANA
+    Restaurant(
+        id = "7",
         name = "Trattoria Bella",
         description = "Deliciosa comida italiana tradicional",
         imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdZu7gXFzyVI6Oh8aSv5utCsyuqJCNbhAHc0F0qh77rXEftifMbzjWjG5j_CTmDmxJupU&usqp=CAU",
@@ -75,9 +102,24 @@ val sampleRestaurants = listOf(
             Dish("Lasaña", "Con capas de pasta, carne y bechamel", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYVNzlCs4bbpneJekln3cOZOS6rLZg69Ipzw&s")
         )
     ),
-    //POSTRES Y DULCES
+
     Restaurant(
-        id = "6",
+        id = "8",
+        name = "La Cucina di Nonna",
+        description = "Sabores auténticos de la abuela italiana",
+        imageUrl = "https://img.freepik.com/vector-premium/diseno-insignia-logotipo-vector-comida-italiana_106546-1416.jpg?semt=ais_hybrid&w=740",
+        category = "Comida Italiana",
+        menu = listOf(
+            Dish("Risotto ai Funghi", "Arroz cremoso con champiñones", "https://foodandjourneys.net/wp-content/uploads/2021/09/Mushroom-Risotto-ai-Funghi-PIC1.jpg"),
+            Dish("Pasta Carbonara", "Con huevo, queso y panceta", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpS7o_fIavMfCNVTSzxOANsbf3v3-OUens6A&s"),
+            Dish("Ravioli", "Pasta en forma de cuadros riquisima", "https://preppykitchen.com/wp-content/uploads/2024/02/Cheese-Ravioli-Recipe-Card.jpg")
+        )
+    ),
+
+
+            //POSTRES Y DULCES
+    Restaurant(
+        id = "9",
         name = "Dulce Tentación",
         description = "Repostería fina y artesanal",
         imageUrl = "https://www.800.cl/galeriasitios/Och/2015/5/29/Och_18332_Fl-9788-MamaKuna-Fg-1-15.jpg",
@@ -88,9 +130,23 @@ val sampleRestaurants = listOf(
             Dish("Cupcake de vainilla", "Con betún de crema y chispas", "https://i.pinimg.com/736x/12/47/14/124714a81c1998fdf374d1e071e8124c.jpg")
         )
     ),
-    //BEBIDAS
+
     Restaurant(
-        id = "7",
+        id = "10",
+        name = "El Paraíso del Dulce",
+        description = "Un rincón para los amantes del azúcar",
+        imageUrl = "https://previews.123rf.com/images/butenkow/butenkow1612/butenkow161202125/67425760-logotipo-de-la-plantilla-de-dise%C3%B1o-de-postre-ilustraci%C3%B3n-del-vector-del-icono.jpg",
+        category = "Postres y Dulces",
+        menu = listOf(
+            Dish("Macarons", "Galletas francesas crujientes y suaves", "https://mandolina.co/wp-content/uploads/2024/04/Macarons-1080x550-1-1200x900.jpg"),
+            Dish("Pastel Red Velvet", "Bizcocho rojo con betún de queso crema", "https://i.pinimg.com/736x/0f/fe/66/0ffe661c686edf1a9ba848c93f7316b4.jpg"),
+            Dish("Tarta de limón", "Con base de galleta y crema de limón", "https://www.pequerecetas.com/wp-content/uploads/2012/09/tarta-de-limon-sin-horno.jpg")
+        )
+    ),
+
+            //BEBIDAS
+    Restaurant(
+        id = "11",
         name = "Refres-K",
         description = "Bebidas frías y naturales para todos los gustos",
         imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfZ7_xFK-v2Hq0Gt1OCZUOS34jx1R936dApg&s",
