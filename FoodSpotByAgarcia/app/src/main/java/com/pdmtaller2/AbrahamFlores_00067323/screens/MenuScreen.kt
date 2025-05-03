@@ -70,17 +70,19 @@ fun MenuScreen(navController: NavController, restaurantId: String?) {
                 LazyColumn {
                     items(filteredMenu) { dish ->
                         DishItem(dish) {
-                            Toast.makeText(
-                                context,
-                                "${dish.name} agregado al carrito",
-                                Toast.LENGTH_SHORT
-                            ).show()
                         }
                     }
                 }
             }
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewMenuScreen() {
+    val navController = rememberNavController()
+    MenuScreen(navController = navController, restaurantId = "1")
 }
 
 

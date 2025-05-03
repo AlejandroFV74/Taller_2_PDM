@@ -9,18 +9,33 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
+private val CustomColorScheme = lightColorScheme(
+    primary = Color(0xFFE53935),
+    secondary = Color(0xFFFFC107),
+    background = Color(0xFFFDFDFD),
+    surface = Color.White,
+    onPrimary = Color.White,
+    onSecondary = Color.Black,
+    onBackground = Color.Black,
+    onSurface = Color.Black
+)
+
+
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = Color(0xFFBB86FC),
+    onPrimary = Color.Black,
+    background = Color.Black,
+    onBackground = Color.White
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = Color(0xFF6200EE),
+    onPrimary = Color.White,
+    background = Color.White,
+    onBackground = Color.Black
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -51,7 +66,7 @@ fun FoodSpotByAgarciaTheme(
     }
 
     MaterialTheme(
-        colorScheme = colorScheme,
+        colorScheme = CustomColorScheme,
         typography = Typography,
         content = content
     )
